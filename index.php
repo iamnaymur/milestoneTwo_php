@@ -13,34 +13,136 @@
     $location = "narayanganj, bangladesh";
     $age = 20;
     $name = 'naymur rahman ';
-    echo 'Hello my name is ' . $name . 'and my age is ' . $age . '. ' . '<br>' . 'I live in ' . $location . '. My favorite fruit is ' . $food . '.';
+    // echo "Hello my name is  $name" . 'and my age is ' . $age . '. ' . '<br>' . 'I live in ' . $location . '. My favorite fruit is ' . $food . '.';
+    
 
-
-    // numbers 
+    //! numbers 
     $x = 10;
     $y = 20;
-    echo '<br>' . 'The total of the numbers is ' . $x + $y;
-    print '<br>' . 'The total of the numbers is ' . $x + $y;
-    echo ('<br>' . 'The total of the numbers is ' . $x * $y . '<br>');
+    // echo '<br>' . 'The total of the numbers is ' . $x + $y;
+    // print '<br>' . 'The total of the numbers is ' . $x + $y;
+    // echo ('<br>' . 'The total of the numbers is ' . $x * $y . '<br>');
+    
 
-
-    print $food . '<br>';
-    $foods = print('drinks');
-    echo $foods . '<br>';
-
+    // print $food . '<br>';
+    // $foods = print('drinks');
+    // echo $foods . '<br>';
+    
     $checkFloat = 30.52;
     $religionIslam = true;
 
+    //! array below
     $friends = array('shafin', 'topu', 'jisan', 'nahin', 'sharmin', 'akibe', 'miraj');
     $checkNull = null;
 
-    var_dump($name);
-    var_dump($age);
-    var_dump($checkFloat);
-    var_dump($religionIslam);
-    var_dump($friends);
-    var_dump($checkNull);
+    // var_dump($name);
+    // var_dump($age);
+    // var_dump($checkFloat);
+    // var_dump($religionIslam);
+    // var_dump($friends);
+    // var_dump($checkNull);
+    
 
+    //! php OBJECT
+    // have to use the word "class" for declaring object in php.
+    
+
+    class Phone
+    {
+        public $model;
+        function phoneModel($number)
+        {
+            global $model;
+            $model = $number;
+            // echo "This is $model " . "<br>";
+        }
+    }
+
+    $apple = new Phone;
+    $apple->phoneModel('Iphone 13');
+    $samsung = new Phone;
+    $samsung->phoneModel('s21 ultra');
+
+
+    //! php string
+    
+    // echo strlen("my name is naymur") . '<br>';
+    // echo str_word_count('my name is naymur') . '<br>';
+    // echo strrev('my name is naymur');
+    
+    $test = strpos('I love to travel and explore cities', 'cities');
+    // var_dump($test);
+    
+    // echo str_replace('cities', 'cultures', 'i love to travel and explore cities');
+    
+    // class Car
+    // {
+    //     public $make;
+    //     public $model;
+    
+    //     public function startEngine()
+    //     {
+    //         echo "Engine started!";
+    //     }
+    // }
+    
+    // $myCar = new Car();
+    // $myCar->make = "Toyota";
+    // $myCar->model = "Camry";
+    
+    // $startEngine = fn() => "Engine started!";
+    
+    // echo $startEngine();
+    
+
+    //! math and numbers on php
+    $x = 5;
+    $y = 10;
+
+    // echo (pi()) . "<br>";
+    // echo (max(23, 345, 42, 213, 345, 123, 543, 34, 21)) . "<br>";
+    // echo (min(23, 345, 42, 1213, 345, 123, 543, 34, 21)) . "<br>";
+    // echo (abs((-100))) . "<br>";
+    // echo (sqrt(64)) . "<br>";
+    // echo (round(pi())) . "<br>";
+    // echo (rand(10, 100)) . "<br>";
+    
+    //* The both z output will be the same, one with using regular variable and the other one with using define() for a constant value. Works same like the let and const that we worked with in the javascript.
+    
+    $z = 17;
+    // echo $z;
+    define('z', 19);
+    // define('z', 17);
+    // echo (z);
+    
+
+    // array with constant values
+    define('cars', [
+        'mercedes',
+        'bmw',
+        'toyota',
+        'tesla',
+        'rolls royce',
+    ]);
+
+    // var_dump(cars);
+    // echo (strlen(cars[0]));
+    // echo (cars[0])
+    
+    //! operators and assignment operators
+    $a = 2;
+    $b = 3;
+
+
+    $c = $a + $b;
+    //Now value of a is 5 below here. See this carefully.
+    $a += $b; //$a = $a + $b;
+    
+    $a -= $b;
+    // echo $a;
+    
+    // ! comparison operators.
+    
     ?>
 
 
