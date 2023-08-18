@@ -142,7 +142,110 @@
     // echo $a;
     
     // ! comparison operators.
+    $x = 50;
+    $y = '50';
+
+    // var_dump($x === $y);
+    // var_dump($x !== $y);
+    // var_dump($x != $y); //var_dump($x<>$y); works the same .
     
+
+    // ! if- else (same as like javascript)
+    
+    $date = date('H');
+    if (22 < 20) {
+        echo ('good morning');
+
+    } elseif (22 < 19) {
+        echo ('bad morning');
+    } else {
+        // echo ('have a nice day');
+    }
+    ;
+
+    // ! loops
+    
+    $t = 0;
+
+    //~ while loop
+    while ($t <= 5) {
+        // echo "the numbers is : $t <br>";
+        $t++;
+    }
+
+    //~ do while loop
+    do {
+        // echo "The number is : $t <br>";
+        $t++;
+    } while ($t <= 5);
+
+    // ~for loop
+    // The for loop is used when you know in advance how many times the script should run.
+    
+    for ($u = 0; $u <= 5; $u += 2) {
+        // echo "The number is : $u <br>";
+    }
+
+
+    // ~ for each
+    define('places', [
+        'sunamganj',
+        'saintmartin',
+        'sajek',
+        'bandarban',
+        'khagrachori',
+    ]);
+
+    foreach (places as $values) {
+        if ($values === 'sajek') {
+            continue;
+        }
+        // echo "$values <br>";
+    
+    }
+    ;
+    foreach (places as $values) {
+        if ($values === 'sajek') {
+            break;
+        }
+        // echo "$values <br>";
+    
+    }
+    ;
+
+    // ~ functions in php
+    // same as like javascript
+    
+    function test_name()
+    {
+        // echo 'This is function';
+    }
+    ;
+    test_name();
+
+    // with numbers
+    function add($a, $b)
+    {
+        $sum = $a + $b;
+        return $sum;
+    }
+
+    $result = add(5, 3);
+    // echo $result;
+    
+    // with default value
+    function greetPerson($name = "mehoman vai")
+    {
+        echo "Hello, $name! <br>";
+    }
+
+    greetPerson();
+    greetPerson("Naymur");
+
+
+    // date and time in php
+    echo "Today is " . date("y/m/d") . "<br>";
+
     ?>
 
 
