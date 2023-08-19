@@ -236,7 +236,7 @@
     // with default value
     function greetPerson($name = "mehoman vai")
     {
-        echo "Hello, $name! <br>";
+        // echo "Hello, $name! <br>";
     }
 
     greetPerson();
@@ -244,7 +244,24 @@
 
 
     // date and time in php
-    echo "Today is " . date("y/m/d") . "<br>";
+    // echo "Today is " . date("y/m/d") . "<br>";
+    
+    //  arrays
+    $age = array("Naymur" => "22", "Rahim" => "55", "Jashim" => "66");
+    $age['Peter'] = "35";
+    $age['Ben'] = "37";
+    $age['Joe'] = "43";
+
+    // echo "Peter is " . $age['Ben'] . " years old.";
+
+    $cars = array(
+        array("Volvo", 22, 18),
+        array("BMW", 15, 13),
+        array("Saab", 5, 2),
+        array("Land Rover", 17, 15)
+    );
+
+    // echo $cars[0][0] . ": In stock: " . $cars[0][1] . ", sold: " . $cars[0][2] . ".<br>";
 
     ?>
 

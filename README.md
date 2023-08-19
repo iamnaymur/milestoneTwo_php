@@ -40,3 +40,8 @@ Mainly variable and constants both are the same but there is a bit difference be
 1 . INDEXED array, (index gets assigned automatically as we saw in javascript and starts with 0.)
 2 . ASSOCIATIVE array, (Associative arrays are arrays that use named keys that you assign to them.)
 3 . MULTIDIMENSIONAL array. (A multidimensional array is an array containing one or more arrays.)
+
+
+
+### Session
+A PHP session is used to store data on a server rather than the computer of the user. Session identifiers or SID is a unique number which is used to identify every user in a session based environment.
