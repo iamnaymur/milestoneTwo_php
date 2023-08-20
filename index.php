@@ -246,14 +246,20 @@
     // date and time in php
     // echo "Today is " . date("y/m/d") . "<br>";
     
-    //  arrays
+    //!  arrays
+    
+    $cars = array("Volvo", "BMW", "Toyota", 'lambo', "Toyota");
+    echo count($cars);
+
+
+
     $age = array("Naymur" => "22", "Rahim" => "55", "Jashim" => "66");
     $age['Peter'] = "35";
     $age['Ben'] = "37";
     $age['Joe'] = "43";
 
     // echo "Peter is " . $age['Ben'] . " years old.";
-
+    
     $cars = array(
         array("Volvo", 22, 18),
         array("BMW", 15, 13),
@@ -262,6 +268,22 @@
     );
 
     // echo $cars[0][0] . ": In stock: " . $cars[0][1] . ", sold: " . $cars[0][2] . ".<br>";
+    
+    //! object
+    class Student
+    {
+        public $name;
+        function studentRole($role)
+        {
+            global $name;
+            $name = $role;
+            echo "Student Name: " . $name . "<br>";
+        }
+    }
+
+    $student1 = new Student();
+    $student1->studentRole("Naymur RAHMAN");
+
 
     ?>
 
