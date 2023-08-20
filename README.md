@@ -44,4 +44,10 @@ Mainly variable and constants both are the same but there is a bit difference be
 
 
 ### Session
-A PHP session is used to store data on a server rather than the computer of the user. Session identifiers or SID is a unique number which is used to identify every user in a session based environment.
+A PHP session is used to store data on a server rather than the computer of the user. Session identifiers or SID is a unique number which is used to identify every user in a session based environment. However, simply sessions in php are used to manage information across different pages throughout the web application.
+
+### Cookies
+We can think of cookies as short notes that we take to remember things in real. the cookies works the same way. Websites create cookies and give it to the browser and when a user comes back to the website with the same browser then it welcome back the user. Cookies can hold information like name,preferences etc.
+
+Both the cookie and session in php almost works the same way with the syntaxes type but the cookies are used for regular information and on the other hand the session is mostly used to store valuable and important data to the server so that no one can get access to any important data of the user.
+
